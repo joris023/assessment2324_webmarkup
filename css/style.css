@@ -1,0 +1,363 @@
+/* ----------------------------- colors --------------------------------- */
+.black {
+    color: black;
+    text-decoration: none;
+}
+.blue {
+    background-color: #BDE0FE;
+}
+.blueborder {
+    border: solid #A2D2FF;
+    border-width: 10px;
+}
+.pink {
+    background-color: #FFC8DD;
+}
+.pinkborder {
+    border: 10px solid #FFAFCC;
+}
+.purple {
+    background-color: #CDB4DB;
+}
+
+/* ----------------------------- general --------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* Uses Google fonts type according to design. (https://fonts.google.com/) */
+}
+
+ul, ol { list-style: none; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 100; }
+
+img { max-width: 100vw;}
+
+p {
+    /* letterspacing niet echt nodig */
+    letter-spacing: 0.01em;
+    line-height: 1.2em;
+    /* text indent schuift de text alleen op dat wil ik niet maar zet de property er wel in */
+    text-indent: 1em;
+    /* wordspacing vind ik al goed  */
+    word-spacing: 0.01em;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+
+/* ----------------------------- navbar --------------------------------- */
+
+nav {
+    position: sticky;
+    border-radius: 50px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+footer {
+    border-radius: 50px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0; 
+}
+.nav .head a{
+    color: Black;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    margin: 10px;
+}
+.nav .foot a{
+    color: Black;
+    text-decoration: none;
+    font-size: 70px;
+    margin: 10px;
+}
+
+.now {
+    text-decoration: underline;
+    border-bottom: 10px solid #CDB4DB;
+}
+
+.logo img {
+    margin-left: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navlist {
+    margin-right: 10%;
+}
+
+
+/* ----------------------------- foto frontpage --------------------------------- */
+
+.frontfoto {
+    background-image: url(/img/schalkwijkfrontpage.jpg);
+    width: 80%;
+    height: 40vw;
+    position: relative;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.centerfrontfoto {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.textfrontfoto {
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: white; 
+    flex-direction: column;
+}
+
+.textfrontfoto h1 {
+    font-size: 100px;
+}
+
+.textfrontfoto p {
+    font-size: 40px;
+}
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    z-index: 9999; /*z-index value is 9999 */
+}
+/* ----------------------------- content homepage --------------------------------- */
+
+.Aarticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    flex-direction:row;
+}
+.Aarticleorder{
+    width: 70%;
+    display: flex;
+}
+.Aarticleorder h2, .Aarticleorder h1 {
+    font-size: 40px;
+    font-weight: 1000;
+    padding-bottom: 2%;
+}
+.Aarticleorder p {
+    font-size: 25px;
+}
+.linkbutton {
+    font-size: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: max-content;
+    height: min-content;
+    margin-top: 10px;
+}
+.linkbutton:hover {
+    background-color: greenyellow;
+    border-color: green;
+    border-style: dotted;
+}
+.linkbutton:active {
+    color: white;
+    background-color: purple;
+    border: double red
+}
+.Aarticlepadding {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.Aarticle img {
+    width: 500px;
+    height: min-content;
+    border-radius: 50px;
+}
+.buble {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 50px;
+}
+.centerimg {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.centerimg img{
+    width: 1000px; 
+    border-radius: 50px;
+}
+.topmargin{
+    margin-top: 2%;
+}
+.Aarticlecolumn {
+    flex-direction: column;
+}
+.aligncenter {
+    text-align: center;
+}
+.form label, legend{
+    font-size: 40px;
+}
+button {
+    font-size: 40px;
+}
+form, label, fieldset {
+    border: none;
+    outline: none;
+}
+/* ----------------------------- media --------------------------------- */
+
+@media (max-width: 768px) {
+    .logo img {
+        margin: 0;
+    }
+    .navlist {
+        margin: 20px;
+    }
+    .nav .head a {
+        font-size: 20px;
+    }
+    .nav .foot a {
+        font-size: 50px;
+    }
+    .textfrontfoto h1 {
+        font-size: 80px;
+    }
+    .textfrontfoto p {
+        font-size: 30px;
+    }
+    .blueborder {
+        border: 5px solid #A2D2FF;
+    }
+    /* ----------------------------- articles --------------------------------- */
+    .Aarticleorder {
+        width: 80%;
+    }
+    .Aarticleorder h1 {
+        font-size: 35px;
+    }
+    .Aarticleorder h2{
+        font-size: 30px;
+    }
+    .Aarticleorder p {
+        font-size: 20px;
+    }
+    .linkbutton {
+        font-size: 30px;
+    }
+    .Aarticleorder img {
+        width: 250px;
+    }
+    .Aarticle .centerimg img {
+        width: 80%;
+        text-align: center;
+    }
+    .form label, legend{
+        font-size: 30px;
+    }
+    button {
+        font-size: 30px;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    .cookies-message {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 426px) {
+    .nav .head a {
+        font-size: 12px;
+        margin: 1px;
+    }
+    .navlist {
+        margin: 0;
+        margin-right: 15px;
+    }
+    .logo img {
+        width: 50px;
+    }
+    .now {
+        border-bottom: 4px solid purple;
+    }
+    .nav .foot a {
+        font-size: 30px;
+        margin: 5px;
+    }
+    .textfrontfoto h1 {
+        font-size: 50px;
+    }
+    .textfrontfoto p {
+        font-size: 20px;
+    }
+    .frontfoto {
+        width: 100%;
+        height: 50vw;
+        border-radius: 0;
+        border: none;
+    }
+    .centerfrontfoto {
+        margin-top: 0;
+    }
+    nav, footer {
+        border-radius: 0px;
+        position: relative;
+    }
+    /* ----------------------------- articles --------------------------------- */
+    .Aarticleorder {
+        width: 90%;
+    }
+    .Aarticleorder h1 {
+        font-size: 30px;
+    }
+    .Aarticleorder h2 {
+        font-size: 25px;
+    }
+    .Aarticleorder p {
+        font-size: 15px;
+    }
+    .Aarticlenormal {
+        flex-direction: column;
+    }
+    .Aarticlereverse {
+        flex-direction: column-reverse;
+    }
+    .buble {
+        border-radius: 0px;
+    }
+    .Aarticleorder img {
+        width: 100%;
+    }
+    .form label, legend{
+        font-size: 20px;
+    }
+}

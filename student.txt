@@ -1,0 +1,5 @@
+Student name: Joris van der meulen
+Student number: 719142
+Student class: Informatica 1a (Inf1a)
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL
