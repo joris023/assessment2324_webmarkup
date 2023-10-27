@@ -106,7 +106,7 @@ footer {
 /* ----------------------------- foto frontpage --------------------------------- */
 
 .frontfoto {
-    background-image: url(/img/schalkwijkfrontpage.jpg);
+    background-image: url(../img/schalkwijkfrontpage.jpg);
     width: 80%;
     height: 40vw;
     position: relative;
